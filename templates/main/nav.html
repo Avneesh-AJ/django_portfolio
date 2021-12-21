@@ -1,9 +1,9 @@
 <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">PORTFOLIO</a>
+      <a href="{% url 'index' %}" class="brand-logo">PORTFOLIO</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'experience' %}">Experience</a></li>
       </ul>
     </div>
   </nav>
