@@ -9,43 +9,82 @@
 
             <!-- Page Content goes here -->
 
-            <div class="row">
+              <div class="row">
                 <div class="col s12 m4">
                     <div class="card">
                         <span  class="card-title"  style="color:red "><i><b><center>AVNEESH JHA</center></b></i></span>
                         <div class="card-image">
-                          <img src="https://media-exp1.licdn.com/dms/image/C5603AQFzvhKPDrM7kQ/profile-displayphoto-shrink_400_400/0/1588857349481?e=1645660800&v=beta&t=LD0ZwmlL9gQhmjEFIxmEnPv74vW24hsP_3IUKeFegMA">
-                          
+                          <img src="https://media-exp1.licdn.com/dms/image/C5603AQFzvhKPDrM7kQ/profile-displayphoto-shrink_400_400/0/1588857349481?e=1645660800&v=beta&t=LD0ZwmlL9gQhmjEFIxmEnPv74vW24hsP_3IUKeFegMA">      
                         </div>
-                        
                         <div class="card-content">
-                          <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
+                          <p>Follow the button to checkout about my projects and demo</p>
                         </div>
-                        <div class="card-action">
-                          <a href="https://www.linkedin.com/in/avneesh-jha-7b01b4171/">LINKEDIN</a>
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/Avneesh-AJ">GITHUB</a>
-                          </div>
+    
                     </div>
+                  
 
                 </div>
 
                 <div class="col s12 m8">
 
-                    <div class="card">
-                        <div class="card-image">
-                          
+                    
+                        <div class="col s12 m6">
+                          <div class="card small">
+                            <div class="card-image">
+                              <img src="https://www.allnetarticles.com/wp-content/uploads/2020/07/Top-10-Reasons-why-Companies-need-Certified-Project-Managers.jpg">
+                              <span class="card-title" style="color:red"><b>PROJECTS</b></span>
+                            </div>
+                            <div class="card-content">
+                              <a class="btn-floating pulse" href="{% url 'projects' %}"><i class="material-icons">send</i></a>
+                              <p>Follow the button to checkout about my projects and demo</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="card-content">
-                          <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
+                        <div class="col s12 m6">
+                          <div class="card small">
+                            <div class="card-image">
+                              <img src="https://pngimg.com/uploads/github/github_PNG20.png">
+                              <span class="card-title" style="color:red"><b>GITHUB</b></span>
+                            </div>
+                            <div class="card-content">
+                              <a class="btn-floating pulse" href="{% url 'projects' %}"><i class="material-icons">send</i></a>
+                              <p>Follow the button to checkout my GITHUB profile</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s12 m6">
+                          <div class="card small">
+                            <div class="card-image">
+                              <img src="https://th.bing.com/th/id/R.9c99ffc1ebac7e7cde46ffe631f695d7?rik=c7pxh0yHgqkvHg&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2fn1054784.jpg&ehk=m7QIb1ePnTyK8ODjSGaJ4zOSNmqsl%2ffsPCQ20xtsbkE%3d&risl=&pid=ImgRaw&r=0">
+                              <span class="card-title" style="color:red"><b>EXPERIENCE</b></span>
+                            </div>
+                            <div class="card-content">
+                              <a class="btn-floating pulse" href="{% url 'projects' %}"><i class="material-icons">note</i></a>
+                              <p>Work Experience and certifications</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s12 m6">
+                          <div class="card small">
+                            <div class="card-image">
+                              <img src="https://www.allnetarticles.com/wp-content/uploads/2020/07/Top-10-Reasons-why-Companies-need-Certified-Project-Managers.jpg">
+                              <span class="card-title">Card Title</span>
+                              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                            </div>
+                            <div class="card-content Small">
+                              <p>FOURTH</p>
+                              <a class="btn-floating pulse" href="{% url 'projects' %}"><i class="material-icons">note</i></a>
+                            </div>
+                          </div>
                         </div>
                         
                     </div>
                     
                 </div>
+            </div>
+              
+            
+
             </div>
 
 
@@ -56,8 +95,10 @@
 
     {% block script %}
         <script>
-           
-            
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+             });
         </script>
         
     {% endblock %}
