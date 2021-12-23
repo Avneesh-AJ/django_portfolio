@@ -1,8 +1,14 @@
 from django.shortcuts import render
+from django.conf import settings
+
 
 # Create your views here.
 def index(request):
-    context={}
+    
+    context={
+        "name":settings.DATA["name"],
+        "ha":settings.DATA["ha"]
+    }
     response=render(request,'main\index.html',context)
     return response
 
